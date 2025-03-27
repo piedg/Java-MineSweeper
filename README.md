@@ -28,7 +28,7 @@ This project is an implementation of the classic Minesweeper game in Java vanill
     ```
 
 ## How to Play
-
+* Enter coordinates to reveal cell.
 * The game presents a grid of hidden cells.
 * Some cells contain mines.
 * The goal is to uncover all the cells that do not contain mines.
