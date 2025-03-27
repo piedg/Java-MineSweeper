@@ -75,19 +75,19 @@ public class Board {
 
     public int discover(int y, int x) {
         if (!inBounds(y, x)) {
-            System.out.println("Coordinates not valid.");
+            System.out.println("Coordinate not valid.");
             return -999;
         }
 
         Cell cell = getCell(y, x);
 
         if (!cell.isHidden()) {
-            System.out.println("Cell discovered.");
+            //System.out.println("Cell discovered.");
             return -9999;
         }
 
         if (cell.isMine()) {
-            System.out.println("Mine discovered!");
+            //System.out.println("Mine discovered!");
             return -1;
         }
 
@@ -105,8 +105,8 @@ public class Board {
                 }
             }
         }
+
         System.out.println("Cell value: " + cell.getValue());
-        printBoard();
         return cell.getValue();
     }
 
@@ -128,5 +128,16 @@ public class Board {
             }
         }
         System.out.println(" ");
+    }
+
+    public boolean allCellsDiscovered() {
+        for (int y = 0; y < height; y++) {
+            for (int x = 0; x < width; x++) {
+                if (!getCell(y, x).isMine() && getCell(y, x).isHidden()) {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 }
