@@ -1,4 +1,4 @@
-# **Minesweeper Game in Java**  
+# **Mine Sweeper Game in Java**  
 Academic Assignment for Unitelma Sapienza University.
 
 This project is an implementation of the classic Minesweeper game in Java vanilla.
