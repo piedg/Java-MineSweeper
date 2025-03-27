@@ -14,7 +14,7 @@ This project is an implementation of the classic Minesweeper game in Java vanill
 
 1.  **Clone the Repository:**
     ```bash
-    git clone [https://github.com/piedg/Java-MineSweeper.git](https://github.com/piedg/Java-MineSweeper.git)
+    git clone https://github.com/piedg/Java-MineSweeper.git
     ```
 
 2.  **Compile the Code:**
