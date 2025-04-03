@@ -2,7 +2,7 @@ public class GameManager {
     private GameState gameState;
     private static GameManager instance = null;
 
-    public GameManager() {
+    private GameManager() {
         gameState = GameState.INGAME;
     }
 
